@@ -16,7 +16,7 @@ struct FavoriteButton: View {
         } label: {
             Label("Toggle Favorite", systemImage: isSet ? "star.fill" : "star")
                 .labelStyle(.iconOnly)
-                .foregroundColor(isSet ? .yellow : .gray)
+                .foregroundColor(isSet ? .yellow : .blue)
         }
 
     }
@@ -24,6 +24,6 @@ struct FavoriteButton: View {
 
 struct FavoriteButton_Previews: PreviewProvider {
     static var previews: some View {
-        FavoriteButton(isSet: .constant(true))
+        FavoriteButton(isSet: .constant(false))
     }
 }
